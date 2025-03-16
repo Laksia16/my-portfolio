@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #001f3f; /* Dark blue background */
+            color: #ffffff; /* White text for visibility */
+        }
+
+        .about-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00bfff; /* Light blue for headings */
+        }
+
+        .about-section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #00bfff; /* Light blue border for image */
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .projects-section h2, .skills-section h2, .contact-section h2 {
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #00bfff; /* Light blue for headings */
+        }
+
+        .card {
+            background-color: #003366; /* Darker card background */
+            color: #ffffff; /* White text for card */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s; /* Add transition for hover effect */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .card-img-top {
+            max-height: 180px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #00bfff; /* Light blue for card titles */
+        }
+
+        .card-text {
+            margin-bottom: 15px;
+        }
+
+        .contact-section {
+            padding: 50px 0;
+            background-color: #343a40; /* Dark background for contact section */
+            color: #fff;
+        }
+
+        .social-icon {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .social-icon:hover {
+            opacity: 0.7;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa; /* Slightly lighter white when hovering over links */
+        }
+
+        @media (max-width: 992px) {
+            .navbar-collapse {
+                background-color: #343a40; /* Same as navbar color for seamless look */
+            }
+        }
+
+        .skill-bar {
+            background-color: #e0e0e0;
+            border-radius: 25px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .skill-progress {
+            height: 25px;
+            background-color: #00bfff; /* Light blue for skill progress */
+            text-align: center;
+            color: white;
+            line-height: 25px; /* Center text vertically */
+        }
+    </style>
+</head>
+<body>
+
+<section id='about' class="about-section">
+    <div class="container">
+        <h2>About Me</h2>
+        <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\about\1.jpg" alt="About Me">
+        <p>I am a final-year undergraduate at General Sir John Kotelawala Defence University, pursuing a BSc in Applied Data Science & Communication. With a passion for AI, predictive analytics, and big data, I am eager to apply my skills to real-world challenges and drive data-driven decision-making. Currently, I am exploring the Microsoft Power Platform, utilizing low-code tools to develop intelligent, data-driven solutions.</p>
+        <p>Additionally, I hold a Microsoft Azure AI Fundamentals certification, which enhances my expertise in AI applications. I aspire to leverage my knowledge and skills to contribute to innovative projects that harness the power of data.</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light">
+    <div class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\projects\1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Predicting Online Shopper Intentions</h5>
+                        <p class="card-text">This project analyzes online shopper behavior using a dataset of 12,330 records to predict purchase intentions. By implementing classification and clustering techniques, I identified factors influencing revenue generation. Utilizing K-Nearest Neighbors (KNN) for classification and K-Means for clustering in R, I achieved a remarkable 93.84% classification accuracy, providing insights to optimize e-commerce strategies.</p>
+                        <a href="https://github.com/Laksia16/online-shopper-intentions" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\projects\2.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Market Basket Analysis for Consumer Purchasing Patterns</h5>
+                        <p class="card-text">This project employs market basket analysis to analyze customer purchasing behavior and identify frequently bought product combinations. By applying the Apriori algorithm in R, I discovered hidden relationships among items in shopping baskets, reducing over 29 million association rules to three significant rules, aiding businesses in optimizing inventory management and marketing strategies.</p>
+                        <a href="https://github.com/Laksia16/market-basket-analysis" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\projects\3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Forest Fire Prediction Using Logistic Regression</h5>
+                        <p class="card-text">In this project, I developed a predictive model to assess the likelihood of forest fires based on environmental conditions in Algeria. Utilizing logistic regression, I achieved a 96.15% accuracy in predicting wildfire occurrences, providing valuable insights for disaster management and resource allocation.</p>
+                        <a href="https://github.com/Laksia16/forest-fire-prediction" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\projects\4.jpg" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Olympic Games Data Analytics</h5>
+                        <p class="card-text">This project conducts an in-depth analysis of Summer Olympic Games data (2000–2016) to uncover key trends in athlete performance and medal distribution. I designed an interactive Power BI dashboard to visualize insights, revealing the USA's dominance in medals and increasing female participation, aiding in data-driven sports analysis.</p>
+                        <a href="https://github.com/Laksia16/olympic-games-data-analytics" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\projects\5.jpg" class="card-img-top" alt="Project 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Child Wellbeing Monitor</h5>
+                        <p class="card-text">This project developed a data-driven reporting system to analyze child poverty levels in Vietnam and Ethiopia. By designing a structured database and visualization solution using SQL and Power BI, I provided a comprehensive comparative analysis of child well-being, delivering actionable insights to improve policy interventions and resource allocation.</p>
+                        <a href="https://github.com/Laksia16/child-wellbeing-monitor" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\projects\6.jpg" class="card-img-top" alt="Project 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Greater Manchester Domestic Energy Performance Analyzer</h5>
+                        <p class="card-text">In this project, I designed an energy performance analysis system for residential buildings in Greater Manchester. Leveraging SQL, Power BI, and Azure, I assessed trends in energy efficiency from 2013 to 2023, delivering insights to optimize heating and insulation strategies, ultimately reducing carbon emissions.</p>
+                        <a href="https://github.com/Laksia16/greater-manchester-energy-analyzer" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\projects\7.jpg" class="card-img-top" alt="Project 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Employee Leave Management System</h5>
+                        <p class="card-text">This project involved designing and developing an automated employee leave management system using Microsoft Power Apps and Power Automate. By replacing inefficient manual processes, I reduced leave request processing time by 60% and enhanced user experience through mobile access for employees and managers.</p>
+                        <a href="https://github.com/Laksia16/employee-leave-management-system" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white">
+    <div class="container">
+        <h2 class="text-center">Skills</h2>
+        <div class="row">
+            <!-- Skill 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\skills\1.png" class="card-img-top" alt="Python">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\skills\2.jpg" class="card-img-top" alt="Azure Cloud Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Azure Cloud Services</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\skills\3.jpg" class="card-img-top" alt="Power Platform">
+                    <div class="card-body">
+                        <h5 class="card-title">Power Platform</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\skills\4.png" class="card-img-top" alt="R Studio">
+                    <div class="card-body">
+                        <h5 class="card-title">R Studio</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 5 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Imsges\skills\5.png" class="card-img-top" alt="MS SQL">
+                    <div class="card-body">
+                        <h5 class="card-title">MS SQL</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Let's connect! I'm always interested in connecting with folks who share a passion for data and technology. Feel free to reach out if you have any questions about my work or potential collaborations. Connect with me via the following email addresses and follow me on LinkedIn.</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <p><i class="fas fa-envelope"></i> 40-adc-0013@kdu.ac.lk</p>
+                <p><i class="fas fa-envelope"></i> lathaparaparan@example.com</p> <!-- Replace with your second email -->
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <a href="https://www.linkedin.com/in/laksia-paraparan-58977a278/" target="_blank">
+                            <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Icons\linkedin.png" alt="LinkedIn" class="social-icon">
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <a href="https://github.com/Laksia16" target="_blank">
+                            <img src="C:\Users\DELL\Downloads\Portfolio\Portfolio images\Icons\github.png" alt="GitHub" class="social-icon">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
